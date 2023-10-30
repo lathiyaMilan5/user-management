@@ -1,0 +1,58 @@
+table {
+    width: 100%;
+}
+
+.userlist{
+    padding: 25px;
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #eef0f8;
+        h3{
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+
+    .noData{
+        padding: 80px 20px;
+
+        p{
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+
+    .mat-elevation-z8{
+        .search{
+            padding: 20px;
+            display: flex;
+            justify-content: end;
+
+            mat-form-field{
+                width: 100%;
+            }
+
+            .mat-icon{
+                width: 20px !important;
+                height: 20px !important;
+            }
+
+            // input{
+            //     width: 25%;
+            //     padding: 5px 10px;
+            //     border-radius: 3px;
+            //     font-size: 14px;
+        
+            //     &:focus{
+            //         box-shadow: none;
+            //     }
+            // }
+        }
+    }
+}

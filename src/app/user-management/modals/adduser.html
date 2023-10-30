@@ -1,0 +1,37 @@
+
+<form class="user-form" [formGroup]="userForm" (submit)="submitForm()">
+
+    <h3>Add User</h3>
+
+    <div class="inp-box">
+        <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name">
+            <mat-icon matSuffix>account_circle</mat-icon>
+          </mat-form-field>
+    </div>
+
+    <div class="inp-box">
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email">
+            <mat-icon matSuffix>email</mat-icon>
+          </mat-form-field>
+    </div>
+
+    <div class="inp-box">
+        <mat-form-field appearance="outline">
+            <mat-label>Select</mat-label>
+            <mat-select formControlName="role" [(value)]="selected">
+                <mat-option>None</mat-option>
+                <mat-option value="user">User</mat-option>
+                <mat-option value="admin">Admin</mat-option>
+                <mat-option value="others">Others</mat-option>
+              </mat-select>
+          </mat-form-field>
+    </div>
+
+    <div class="add-user-btn">
+        <button mat-raised-button color="primary">Submit</button>
+    </div>
+</form>
